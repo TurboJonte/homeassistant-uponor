@@ -90,7 +90,7 @@ class UponorStateProxy:
             var = 'sys_controller_' + str(c) + '_presence'
             if var in self._data and self._data[var] != "1":
                 continue
-            for i in range(1, 13):
+            for i in range(1, 21):
                 var = 'C' + str(c) + '_thermostat_' + str(i) + '_presence'
                 if var in self._data and self._data[var] == "1":
                     active.append('C' + str(c) + '_T' + str(i))
